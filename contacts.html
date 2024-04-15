@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Navbar-->
+            <div class="logo"><a href="#">Cha@IT</a></div>
+            <nav class="navbar">
+            <style type="text/css">
+                .logo a{
+      position:absolute;
+      height: auto;
+      left: 0px;
+      font-style:normal;
+      font-weight: 400;
+      font-size: 30px;
+      color: rgb(209, 44, 85);
+      }
+            body{
+               margin: 0px;
+           }
+           main{
+               margin-left:20px;
+               margin-right: 20px;
+           }
+           
+           .navbar ul{
+           list-style-type: none;
+           background-color: white;
+           padding: 0px;
+           margin: 0px;
+           overflow: hidden;
+           }
+           .navbar a{
+      color: lightcoral;
+      text-decoration: none;
+      padding: 15px;
+      display:inline-table;
+      text-align: right;
+      justify-content: space-between;
+         }
+  .navbar ul{
+      float: right;
+  }
+  
+  </style>
+      
+      <ul>
+         <ii><a href="Home.html">Home</a> </ii>
+         <ii><a href="About me.html">About me</a> </ii>
+         <ii><a href="contacts.html">contacts</a> </ii>
+      </ul>
+   </nav>
+   <main>
+    <head>
+    <br>
+<head>
+    <body>
+        <section class="contacts">
+            <div class="container">
+                <style type="text/css">
+                   *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    }
+    .heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position:relative ;
+}
+.heading h1::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: lime;
+}
+    .contacts{
+        min-height: 100vh;
+        background-color:whitesmoke;
+        padding:50px;
+        text-align: centre;
+    }
+    .container{
+        max-width: 800px;
+        margin:0 auto;
+    }
+    .container h3{
+         font: 36pxpx;
+         margin-bottom: 40px;
+         color: #333;
+         text-align: left;
+    }
+    .contact-wrapper{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:30px;
+    }
+    .contact-form{
+        text-align: left;
+
+    }
+    .contact-form h4{
+        font-size:24px;
+        margin-bottom:20px;
+        color:#333
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .form-group,textarea{
+        width: 100%;
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        background-color:lightcoral ;
+        accent-color: #333;
+    }
+    input,text{
+        width: 100%;
+        padding:12px;
+        border-radius:8px;
+        border:none;
+        background-color:lightcoral ;
+        accent-color: #333;
+    }
+    input:focus,
+    textarea:focus{
+        outline:none;
+        box-shadow:0 0 8px #bbb;
+        transition: 0.3s ease;
+    }
+    button{
+        display: inline-block;
+        padding:12px 24px;
+        background-color: lime;
+        color:whitesmoke;
+        border:none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color:lime;
+    }
+    .contacts-info{
+        text-align: right;
+    }
+    .contacts-info h3{
+        font-size:24px;
+        margin-bottom:20px;
+        color:#333;
+        text-align: right;
+        
+    }
+    .contacts-info p{
+        margin-bottom: 10px;
+        color: #555;
+    }
+    .contact-form i{
+        color:#4caf50;
+        margin-right: 10px;
+    }
+    @media screen and(max-width:768px){
+        .container{
+            padding:20px;
+        }
+        .contact-wrapper {
+        grid-template-columns: repeat (2,1fr);
+        }
+    }
+
+                </style>
+            <div class="heading">
+             <h1>contact me</h1>
+            </div>
+             <br>
+             <div class="contact-wrapper">
+              <div class="contact-form">
+                <h4>send me a message</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="your name">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" placeholder="your email">
+                    </div>
+                    <div class="form-group">
+                     <textarea type="message" name="message" placeholder=" your message"></textarea>
+                    </div>
+                    <button type="submit">send message</button>
+                </form>
+              </div>
+              <div class="contacts-info">
+                <h3>contact information</h3>
+                <p><i class="fa-solid fa-phone"></i>0796854496</p>
+                <p><i class="fa-solid fa-envelope"></i>mthombeninhlaluko2@gmail.com</p>
+                <p><i class="fa-brands fa-linkedin"></i>charity mthombeni</p>
+              </div>
+             </div>
+            </div>
+        </section>
+        <hr>
+    </body>  
+</head>   
+<hr>
+<style type="text/css">
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footercontainer{
+    background-color:lightcoral ;
+}
+.footercontainer a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    justify-content: center;
+}
+.footercontainer p{
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    justify-content: center; 
+}
+
+</style>
+<div class="footercontainer">
+    <a><i class="fa-solid fa-phone"></i>0796854496</a>
+    <a><i class="fa-solid fa-envelope"></i>mthombeninhlaluko2@gmail.com</a>
+    <a><i class="fa-brands fa-linkedin"></i>charity mthombeni</a>
+    <a><i class="fa-solid fa-location-dot"></i>polokwane</a>
+    <p>copyright &copy;2024 designed by <spam class="designer">charity</spam></p>
+</div>
+</html>
