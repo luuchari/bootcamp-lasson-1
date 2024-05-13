@@ -1,3 +1,15 @@
+
+
+.logo a{
+    position:absolute;
+    height: auto;
+    left: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(209, 44, 85);
+    }
+
 body{
     margin: 0px;
 }
